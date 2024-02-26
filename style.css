@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.7s;
+}
+p {
+    font-size: 20px;
+}
+button {
+    font-size: 15px;
+}
+.first {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff000;
+    background-image: linear-gradient(10deg, #fff000 0%, #ed008c 74%);
+}
+
+.first .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: relative;
+    align-items: center;
+    width: 300px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+.first .card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.479);
+}
+
+.first .circle {
+    position: absolute;
+    height: 500px;
+    width: 560px;
+    border-radius: 50%;
+    top: -325px;
+
+    z-index: -1;
+}
+
+.first .card:hover .circle {
+    height: 1000px;
+}
+
+.first h1 {
+    margin-bottom: 100px;
+    margin-top: 45px;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.first .card:hover p {
+    color: white;
+}
+
+.first .golden {
+    background-color: #FFD700;
+}
+
+.first .pink {
+    background-color: #f40d30;
+}
+
+.first .purple {
+    background-color: #A020F0;
+}
+
+.first .button {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.first .card:hover .button {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.second {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    position: relative;
+}
+
+.second .card {
+    border-radius: 10px;
+    border: 2px solid lightgrey;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.507);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    justify-content: space-evenly;
+    gap: 30px;
+    width: 300px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s !important;
+}
+.second .card:hover {
+    background-color: rgb(25, 186, 197);
+}
+.second i {
+    font-size: 70px;
+}
+
+.second .card:hover i,
+.second .card:hover p,
+.second .card:hover h1 {
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.second button {
+    padding: 10px 90px;
+    border-radius: 25px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+.second .card:hover button {
+    background-color: #fff;
+    color: black;
+    position: relative;
+    z-index: 1;
+}
+
+/* .second .black {
+    background-color: black;
+    width: 100%;
+    height: 0;
+    position: absolute;
+}
+
+.second .card:hover .black {
+    height: 1000px;
+} */
+
+.third {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); 
+}
+
+.third .card {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.432);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: auto;
+    position: relative;
+    background-color: white;
+}
+.third .layer{
+    position: absolute;
+    height: 194px;
+    width: 0;
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    align-items:end;
+    justify-content: left;
+    background-color: #0000007c;
+    left: 0;
+}
+.third .layer h1 {
+    margin: 10px;
+}
+.third .card:hover .layer {
+width: 100%;
+}
+.third button {
+    width: 250px;
+    height: 50px;
+    background-color: rgb(163, 198, 230);
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    color: rgb(48, 74, 160);
+}
+
+.third img {
+    height: 194px;
+    width: 100%;
+}
+
+.third .center {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+}
+@media screen and (max-width: 956px) {
+    .first,
+    .second,
+    .third {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+}
